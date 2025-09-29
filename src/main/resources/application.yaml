@@ -1,6 +1,12 @@
 spring:
   application:
     name: ws
+  threads:
+    virtual:
+      enabled: true
+
 
 server:
-  port: 9023
+  port: 9021
+  undertow:
+    idle-timeout: 3600000
